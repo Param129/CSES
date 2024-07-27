@@ -196,16 +196,7 @@ void quickSort(vector<int>& arr, int low, int high) {
     }
 }
 
-void solve(set<int>&st,int i,int n,int sum,int tar){
-    if(i==n)return;
-    if(sum>tar)return;
-    if(sum==tar)return;
 
-    solve(st,i+1,n,sum,tar);
-    st.insert(i);
-    solve(st,i+1,n,sum+i,tar);
-    st.erase(i);
-}
 
 int main(){
     long long n;
